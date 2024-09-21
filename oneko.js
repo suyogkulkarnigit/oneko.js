@@ -96,6 +96,13 @@
     nekoEl.style.top = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = 2147483647;
 
+    // oneko will have some index problem if your ui is old terminal type
+    // with black and green colors make the texts z index 2
+
+    // nekoEl.style.zIndex = 1;
+    // nekoEl.style.mixBlendMode="screen"
+    // nekoEl.style.filter="brightness(150%) contrast(200%)";
+
     let nekoFile = "./oneko.gif"
     const curScript = document.currentScript
     if (curScript && curScript.dataset.cat) {
