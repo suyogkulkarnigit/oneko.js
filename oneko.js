@@ -150,10 +150,9 @@
   function idle() {
     idleTime += 1;
 
-    // every ~ 20 seconds
+    // every ~ 30 seconds
     if (
-      idleTime > 10 &&
-      Math.floor(Math.random() * 200) == 0 &&
+      idleTime > 30 &&
       idleAnimation == null
     ) {
       let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
